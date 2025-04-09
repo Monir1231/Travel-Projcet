@@ -47,7 +47,7 @@ body{
 
 
 .navber{
-    padding: 20px 120px;
+    padding: 30px 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,20 +60,73 @@ body{
     width: 100px;
 }
 
-.footer-link ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 10px;
+
+.nav-ul{
+    text-align: center;
 }
 
-.footer-link ul li a{
+.nav-ul li{
+ display: inline-block;
+ position: relative;
+}
+
+.nav-ul li a{
+    display: block;
+    padding: 20px 25px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.nav-ul li a :hover{
+  color: #DF6951;
+}
+
+.nav-ul li ul.drop li{
+    display: block;
+    padding: 0px 0;
+    background: #D9D9D957;
     
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  color: white;
+
+}
+
+.nav-ul li ul.drop{
+    /* position: relative; */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 999;
+    border-radius: 20px;
+    display: none;
+    transition: all linear .3s;
+   
+}
+
+.nav-ul li:hover  ul.drop{
+    display: block;
+    transition: all linear .3s;
+}
+
+/* .drop .my-primid {
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D957;
+    position: absolute;
+    top: -7%;
+    left: 23%;
+    transform: rotate(45deg);
+    z-index: 10;
     
+} */
+
+
+.nav-ul li ul.drop li a{
+    display: inline-block;
+    font-size: 12px;
+    padding: 11px 0px;
+    font-family: "Poppins", sans-serif;
+  
+   
 
 }
 
@@ -98,7 +151,7 @@ body{
 
 
 .hero-content{
-    padding: 120px 120px;
+    padding: 100px 120px;
 }
 
 
@@ -112,6 +165,7 @@ body{
     font-size: 58px;
     font-weight: 700;
     color: #f1f1f1;
+    margin-bottom: 40px;
 }
 
 .submit{
@@ -120,6 +174,7 @@ body{
    background-color: #f1f1f1;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .submit-main{
@@ -144,6 +199,7 @@ body{
     font-weight: 500;
     border: none;
     background: none;
+    outline: none;
     
 }
 
@@ -294,8 +350,6 @@ body{
 }
 
 
-
-
 .romantic-img img{
    width: 470px;
 }
@@ -334,6 +388,12 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
+    transition: all linear .3s;
+}
+
+.romantic-content button:hover{
+    cursor: pointer;
+    background-color: teal;
     transition: all linear .3s;
 }
 
@@ -493,6 +553,12 @@ body{
     margin-bottom: 45px;
 }
 
+.tour-content button:hover{
+    cursor: pointer;
+    background-color: teal;
+    transition: all linear .3s;
+}
+
 
   
 
@@ -569,14 +635,24 @@ left: 20%;
     border-radius: 4px;
    border: 1px solid white;
    color: white;
-    
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 600;
     transition: all linear .3s;
     background: transparent;
+    transition: all linear .3s;
  
 }
+
+.nature-main button:hover{
+        cursor: pointer;
+        background-color: teal;
+        transition: all linear .3s;
+        border: none;
+
+}
+
+
 
 
 .nature-main-2{
@@ -620,7 +696,15 @@ left: 20%;
     font-weight: 600;
     transition: all linear .3s;
     background: transparent;
+    transition: all linear .3s;
  
+}
+
+.nature-main-2 button:hover{
+    cursor: pointer;
+    background-color: teal;
+    transition: all linear .3s;
+    border: none;
 }
     
 
@@ -630,7 +714,6 @@ left: 20%;
 
 .card-header{
     text-align: center;
- 
 }
 
 
@@ -807,6 +890,13 @@ left: 20%;
     margin-bottom: 45px;
 }
 
+.my-btn button:hover{
+    cursor: pointer;
+    background-color: teal;
+    transition: all linear .3s;
+    border: none;
+}
+
 /* promotion part start */
 
 .promotion{
@@ -886,7 +976,13 @@ left: 20%;
     position: absolute;
     top: 54%;
     left: 30%;
+   
 }
+.img-icon-2 i:hover{
+    background-color: #DF6951;
+    color: white;
+    transition: all linear .3s;
+} 
 
 .img-icon-2 i{
     height: 40px;
@@ -897,8 +993,10 @@ left: 20%;
     align-items: center;
     color: white;
     border-radius: 50%;
-   
+    transition: all linear .3s;
 }
+   
+
 
 .img-icon-3 {
     position: absolute;
@@ -906,6 +1004,11 @@ left: 20%;
     right: 30%;
 }
 
+.img-icon-3 i:hover{
+    background-color: #DF6951;
+    color: white;
+    transition: all linear .3s;
+}
 .img-icon-3 i{
     height: 40px;
     width: 40px;
@@ -915,4 +1018,141 @@ left: 20%;
     align-items: center;
     color: white;
     border-radius: 50%;
+    transition: all linear .3s;
 }
+
+
+/* footr part start */
+
+footer{
+    padding: 60px 70px;
+   
+    
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-logo{
+    width: 25%;
+}
+
+.footer-logo img{
+width: 100px;
+}
+
+.footer-logo p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0;
+    color: #757095;
+}
+
+.footer-icon{
+    display: flex;
+    padding: 15px 0;
+    gap: 13px;
+}
+
+.footer-icon i{
+    color: #DF6951;
+    transition: all linear .3s;
+}
+
+.footer-icon i:hover{
+    color: teal;
+    transition: all linear .3s;
+}
+
+.footer-link-head{
+    /* width: 25%; */
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+
+.footer-link-head h4{
+ padding: 20px 0;
+ margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #181433;
+}
+
+.footer-link li{
+    padding: 5px 0;
+    color: #757095;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-link li:hover{
+    color: #DF6951;
+}
+
+/* .footer-Newsletter {
+    width: 25%;
+    
+} */
+
+.footer-Newsletter h4{
+    padding-bottom: 0px;
+    margin-top: 40px;
+     font-family: "Poppins", sans-serif;
+     font-size: 14px;
+     font-weight: 700;
+     color: #181433;
+
+    }
+ 
+   .Newsletter-from{
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+   }
+    
+   
+
+    .Newsletter-from input{
+        padding: 12px 34px;
+        background-color: #EEEEFF;
+        border: none;
+        border-radius: 5px;
+        
+    }
+
+    .Newsletter-from ::placeholder{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    }
+
+    .Newsletter-from button {
+        padding: 12px 17px;
+        background-color: #EEEEFF;
+        border: none;
+        border-radius: 5px;
+        background-color: #DF6951;
+        color: white;     
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .footer-Newsletter p{
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 10px;
+        color: #757095;
+        margin-top: 16px;
+    }
