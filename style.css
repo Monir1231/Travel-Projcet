@@ -60,6 +60,10 @@ body{
     width: 100px;
 }
 
+.nav-logo img{
+    padding-top: 6px;
+}
+
 
 .nav-ul{
     text-align: center;
@@ -71,15 +75,18 @@ body{
 }
 
 .nav-ul li a{
+    font-family: "Open Sans", sans-serif;
     display: block;
-    padding: 20px 25px;
+    padding: 10px 20px;
     font-size: 16px;
     color: white;
     text-align: center;
+    transition: all linear .3s;
 }
 
-.nav-ul li a :hover{
+.nav-ul li a:hover{
   color: #DF6951;
+  transition: all linear .3s;
 }
 
 .nav-ul li ul.drop li{
